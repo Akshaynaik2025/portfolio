@@ -369,21 +369,21 @@
         <div class="contact-content">
             <div class="contact-form-container">
                 <h1 class="greet-heading">Get In Touch</h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Name">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Email">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Phone">
-                    <textarea class="form-controls" 
-                              placeholder="Write your message" 
-                              name="message" id="" cols="30"
-                              rows="10">
-                      </textarea>
-                    <input class="form-btn btn common-btn" 
-                           type="submit" value="Send Message">
-                </form>
+                <form action="https://formsubmit.co/akshaypnaik014@gmail.com" method="POST" class="contact__form">
+                    <div class="contact__content">
+                      <label class="content__label" for="name">Name</label>
+                      <input type="text" name="name" id="name" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                      <label class="content__label" for="email">Email</label>
+                      <input type="email" name="email" id="email" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                      <label class="content__label" for="message">Message</label>
+                      <textarea name="message" id="message" class="contact__input" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                  </form>
             </div>
             <div class="contact-details">
                 <h1 class="greet-heading">My Contact Details</h1>
@@ -426,12 +426,12 @@
                             </a>
                         </li>
                         <li class="footer-list-items">
-                            <a class="footer-links" href="#">
+                            <a class="footer-links" href="https://www.instagram.com/akshaynaik_44?igsh=MWZhbm5sOGRkNTd2dw==">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="footer-list-items">
-                            <a class="footer-links" href="#">
+                            <a class="footer-links" href="https://github.com/Akshaynaik2025">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
