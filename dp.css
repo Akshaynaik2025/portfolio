@@ -344,7 +344,7 @@ body {
 .certificates-section {
     padding: 50px 0;
     text-align: center;
-    background: #f9f9f9; /* Match your theme */
+    background: #f9f9f9;
 }
 
 .certificates-container {
@@ -356,33 +356,52 @@ body {
 }
 
 .certificate-item {
-    max-width: 350px;
+    width: 380px; /* Increased from 350px */
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease; /* Changed from transform to all for smoother effects */
 }
 
 .certificate-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02); /* Added slight scale on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 .certificate-img {
     width: 100%;
-    max-width:350px
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0; /* Only round top corners */
     border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease; /* Added for hover effect */
+}
+
+.certificate-item:hover .certificate-img {
+    transform: scale(1.03); /* Slight zoom effect on hover */
 }
 
 .certificate-title {
     padding: 15px;
     font-size: 16px;
     color: #333;
+    margin: 0; /* Remove default margins */
 }
+
 @media (max-width: 768px) {
     .certificate-item {
-        max-width: 100%;
+        width: 100%;
+        max-width: 400px; /* Added max-width for better mobile display */
+    }
+    
+    .certificates-container {
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .certificate-item {
+        width: 400px; /* Slightly larger on big screens */
     }
 }
